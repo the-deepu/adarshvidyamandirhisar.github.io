@@ -1,0 +1,455 @@
+<!doctype html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<head>
+<style>
+ 
+
+body {
+ background: linear-gradient(90deg, #276174, #33C58E, #63FD88);
+ text-align: center;
+}
+ .logo
+ img {
+ width: 105px;
+ height: 80px;
+ border:solid 0px;
+ border-radius: 95px;
+ position: relative;
+ top: 20px;
+ }
+ 
+ .tag{
+ display: inline;
+ margin-left: 0px;
+ position: relative;
+ left: 35px;
+ buttom: 250px;
+ 
+ }
+ 
+ .mc{
+ position: relative;
+ right: 144px;
+ top: 50px;
+ 
+ }
+
+ 
+ .contain{
+ font-weight: bold;
+ background: none;
+ }
+ 
+ a {
+  
+  text-decoration: none;
+  font-weight: bold;
+  color: red;
+  text-decoration: none;
+ 
+ }
+ 
+ img {
+  width: 300px;
+  border: solid 1px white;
+  border-radius: 30px;
+  box-shadow: 3px 2px 10px #000;
+  
+ }
+ h5 {
+  border: solid 3px white;
+  border-radius: 10px;
+  font-family: Helvetica;
+ font-weight: bold;
+ 
+ letter-spacing: 2px;
+ padding: 5px;
+ color: black;
+ text-align: center;
+ }
+ 
+ em {
+  color: white;
+  background-color: orange;
+ }
+ 
+button{
+ 
+ border: none;
+
+ width: 68px;
+ height: 50px;
+  padding: 7px 7px;
+  margin: 0px;
+  background: linear-gradient(90deg, #276174, #33C58E, #63FD88);
+  border: none;
+  border-radius: 25px;
+  font-size: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  outline: none;
+  text-align: center;
+  letter-spacing: 1px;    
+  box-shadow: -7px -7px 20px 0
+          #276174,
+          7px 7px 20px 0px
+          #33c58e;
+          
+                    
+ }
+ 
+ button:hover{
+  box-shadow: inset  -7px -7px 20px 0
+         #276174,
+        inset  7px 7px 20px 0px #33c58e;
+          
+          
+}
+ 
+ .info{
+ border: solid 2px white;
+ padding: 0 0 0 0;
+ border-radius: 100px;
+ background-color: #e3edf7;
+ }
+ 
+ .info 
+ p {
+ 
+  font-family: sans-serif;
+ font-weight: bold;
+ letter-spacing: 1px;
+ padding: 5px;
+ color: #555;
+ text-align: center;
+ }
+ 
+   h4{
+  background-color: orange;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  }
+
+.feature{
+border: solid 2px white;
+ padding: 0 0 0 0;
+ border-radius: 50px;
+ background-color: #2d2926ff;
+ 
+}
+
+.feature 
+p {
+  font-family: sans-serif;
+ font-weight: bold;
+ letter-spacing: 1px;
+ padding: 5px;
+ color: #e94b3cff;
+ text-align: center;
+ font-size: 17px;
+ 
+}
+
+
+.feature 
+h3 {
+ color: white;
+ font-weight: bold;
+ letter-specing: 5px;
+ text-align: center;
+}
+
+#green {
+ color: green;
+ background: none;
+}
+
+.contain button{
+color: green;
+}
+
+
+.end{
+font-family: Sans-Serif;
+  
+  display: flex;
+  align-items: center;
+  height: 150px;
+}
+
+.end button{
+  width: 300px;
+  
+  margin: 20px;
+  background: linear-gradient(90deg, #276174, #33C58E, #63FD88);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  outline: none;
+  rotate(90deg):left;
+  
+  letter-spacing: 2px;
+  box-shadow: -7px -7px 20px 0
+          #276174,
+          7px 7px 20px 0px
+          #33c58e;
+          
+}
+.btn:hover{
+  box-shadow: inset  -7px -7px 20px 0
+         #276174,
+        inset  7px 7px 20px 0px #33c58e;
+          
+          
+}
+
+.endd{
+color: #fff;
+}
+
+.outer{
+  position: relative;
+  margin: 50px;
+ 
+  background: #111;
+}
+.button{
+  height: 70px;
+  width: 220px;
+  border-radius: 50px;
+}
+.circle{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.outer button, .outer span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.outer button{
+  background: #111;
+  color: #f2f2f2;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  z-index: 9;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.button button{
+  height: 60px;
+  width: 210px;
+  border-radius: 50px;
+}
+.circle button{
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+}
+.outer span{
+  height: 100%;
+  width: 100%;
+  background: inherit;
+}
+.button span{
+  border-radius: 50px;
+}
+.circle span{
+  border-radius: 50%;
+}
+.outer:hover span:nth-child(1){
+  filter: blur(7px);
+}
+.outer:hover span:nth-child(2){
+  filter: blur(14px);
+}
+.outer:hover{
+  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+  animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+@media (max-width: 640px){
+  .center{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .outer{
+    margin: 50px 0;
+  }
+}
+
+.outer circle  a{
+ text-decoration: none;
+ color: white;
+}
+
+.king{
+background: black;
+width: 300px;
+height: 300px;
+position: absolute;
+justify-content: center;
+justify-items: center;
+left: 30px;
+right: 30px;
+
+}
+
+.dking{
+ justify-items: center;
+justify-content: center:
+background: black;
+width: 300px;
+height: 300px;
+border-radius: 10px;
+}
+
+.teacher{
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  
+}
+.tea{
+  width: 340px;
+  height: 220px;
+}
+ 
+.teacher p{
+background: #e3edf7;
+color: #555;
+ text-align: center;
+ border: solid 2px white;
+ padding: 5px;
+ border-radius: 15px;
+}
+
+.tea2{
+  width: 330px;
+  height: 240px;
+}
+
+</style>
+ <link rel="stylesheet" href="main.css">
+</head>
+
+<div class="logo">
+ <img src="logo.jpg">
+ </div>
+
+<div class="contain">
+
+<div class="mc"><button><a href="About.html">About</a></button>
+</div>
+<div class="tag"><button><a href="Authoritiesfinal.html">Authority</a></button>
+</div>
+<div class="tag"><button><a href="Activities.html">Activity</a></button>
+</div>
+<div class="tag"><button><a href="Gallery.html">Gallery</a></button>
+</div>
+<div class="tag"><button><a href="Contact.html">Contact</a></button>
+</div>
+
+</div>
+<br>
+
+<br>
+<div>
+ <img src="school.jpg">
+</div>
+ <h5>ADARSH VIDYA MANDIR SR. SEC. SCHOOL <br> DURJANPUR (HISAR)</h5>
+  
+ <div class="tareef">
+  <h4><em>"A Family Of Learning."</em></h4>
+ <br>
+  <h4><em>"Think High, Grow High & Score High With Us..."</em></h4>
+ </div>
+ <br>
+ <div class="info">
+ <h3>Basic Info</h3>
+ <p>
+Village Name : Durjanpur</p>
+<p>Category : Senior Secondary</p>
+
+<p>Type Of School : Co-Educational</p>
+<p>Instruction Medium : English-Hindi</p>
+<p>Affiliated To : HBSE</p>
+<p>Block Name : Agroha</p>
+<p>Cluster : Durjanpur</p>  
+ </div>
+ <br>
+ <div class="feature">
+ <h3> -•- SILENT FEATURES -•- </h3>
+ <p>
+• A School In Lap Of Nature.</p>
+<p>• Qualified, Dedicated & Experienced Staff. </p>
+
+<p>• Transport Facility For Both, Staff And Students.</p>
+<p>• Teacher Student Ratio 1:30</p>
+<p>• Extra Attention To Below Average Students.</p>
+<p>• Facility To Pick You Up From Every Corners Of Villages Through Van.</p>
+<p>• Lush Green Pollution Free Environment.</p>
+
+</div>
+
+<br>
+<div class="end">
+ <button class="btn">Our Faculty</button>
+
+</div>
+
+<div class="teacher">
+<img class="tea" src="teacher.jpg">
+<p><strong>First Line:(Left To Right)</strong> Mr.Dinesh, Mr.Aadram, Mr.Sukhvir, Mr.Hansraj, Ms.Shakuntala, Ms.Shashi, Ms.Sharda, Ms.Sumit Ms.Sunita, Ms.Urmila,  Ms.Rajesh, Ms.Bharti, Ms.Ritu, Ms.Parveen, Ms.Neelam, Mr.Sudhir, Mr.Rajkumar, Mr.Ankit, Mr.Vikash.
+<br>
+<br>
+<strong>Second Line:(Right To Left)</strong> Mr.Chandan, Mr.Balvinder (Principal),  Everester Rohtash Khileri(Present As A Guest), Mr.Deshraj(Director).
+</p>
+<img class="tea2" src="teacher2.jpg">
+<p><strong>First Line:(Left To Right)</strong> Ms.Shashi, Mr.Deshraj(Director), Mr.Rajkumar.
+<br>
+<strong>Second Line:(Left To Right)</strong> Ms.Parveen, Ms.Bharti, Ms.Sharda, Ms.Urmila, Ms.Sunita, Ms.Ritu, Ms.Sumit, Ms.Neelam.
+<br>
+<strong>Third Line:(Left To Right)</strong>  Mr.Hansraj, Mr.Sukhvir, Mr.Sudhir, Mr.Aadram, Mr.Vikash, Mr.Ankit.</p>
+</div>
+
+<hr>
+<br>
+<br>
+<div class="dking">
+<center>
+<div class="king">
+<center>
+<div class="outer circle">
+        <button><a href="Deepu.html">Click Me To Meet Developer Of This Website</a></button>
+        <span></span>
+        <span></span>
+      </div>
+</center>      
+</div>
+</center>
+</div>
+<br>
+<br>
+<br>
+<br>
+</body>
+ 
+</html>

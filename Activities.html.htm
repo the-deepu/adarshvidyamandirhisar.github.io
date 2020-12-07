@@ -1,0 +1,147 @@
+<!doctype html> 
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>Responsive Grid Cards</title>
+    <style>
+     *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #151320;
+    height: 100vh;
+    display: grid;
+    place-items: center center;
+    font-family: 'Poppins',sans-serif;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    padding: 20px;
+    grid-gap: 40px;
+}
+.card{
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+.container{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}
+img{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+.container:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+
+.details{
+    padding: 20px 10px;
+}
+.details>h3{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+}
+.details>p{
+    color: #a0a0a0;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.im 
+img {
+ transform: rotate(180deg);
+}
+    </style>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cards">
+        <div class="card card1">
+            <div class="container">
+                <img src="prayer.jpg">
+            </div>
+            <div class="details">
+                <h3>Prayer</h3>
+                <p>A morning prayer is one of the best way to focus your time and attention on seeking God's plan for the day ahead.
+Like rest of the schools, Almighty is remembered everyday, in Adarsh Vidya Mandir. </p>
+            </div>
+        </div>
+        <div class="card card2">
+            <div class="container">
+                <img src="fvisit.jpg">
+            </div>
+            <div class="details">
+                <h3>Fun Visits</h3>
+                <p>Having fun is good and important as well. Children are simply amazing with their sense of curiosity, creativity, and overall happiness. Good food, playing games, making love, making merry are too very important in student life. We regularly do fun visit to nearby fun-spots and clubs.</p>
+            </div>
+        </div>
+        <div class="card card3">
+            <div class="container">
+                <img src="extrac.jpg">
+            </div>
+            <div class="details">
+                <h3>Extracurricular Activities</h3>
+                <p>Extracurricular activities are utmost important in a student's life. Students who get involved in extra activities meet new people and because of that their social skills are improved. 
+And The Good Things Is and the good thing is Avm promotes a lot of such activity very much.</p>
+            </div>
+            </div>
+            <div class="card card4">
+            <div class="container">
+               <img src="tour.jpg">
+            </div>
+            <div class="details">
+                <h3>Educational Tours</h3>
+                <p>Educational tours play an important role in educating students in a practical and interesting manner. Something that is seen in real can be easily perceived than something that we simply read in book. So taking students to trips that will relate to their academics can help them learn much better. We Organise such trips, on regular basis.</p>
+            </div>        
+        </div>
+        <div class="card card5">
+            <div class="container">
+                <img  src="quiz.jpg">
+            </div>
+            <div class="details">
+                <h3>Various Quizzes, Competitions & More</h3>
+                <p>The objective of every Indian school quizzing competition is to encourage students to look beyond their textual knowledge and establish a relationship between theory and application of the learnt concepts. It awakens the spirit of competition in the students' minds.
+We at AVM, organise various kind of quizzes and competitions every month.</p>
+            </div>        
+        </div>
+        <div class="card card6">
+            <div class="container">
+                <img src="gather.jpg">
+            </div>
+            <div class="details">
+                <h3>Student Gatherings & Discussions</h3>
+                <p>Such discussions among students, help them by training them to discuss and argue about a particular topic, it help students to express their views on serious subjects and in formal situations. It improves their thinking, listening and speaking skills. Every saturday, we held such discussion events (generally called <em>"Bal Sabha"</em>) in school. Along with this, we invite Public figures in school, who shares their various experiences with students and motivates them.</p>
+            </div>        
+        </div>
+        <div class="card card7">
+            <div class="container">
+                <img src="celeb.jpg">
+            </div>
+            <div class="details">
+                <h3>Events & Celebrations!</h3>
+                <p>Celebrating events and fests in schools have become an integral part of learning and building a strong cultural belief in a child. Such celebration will bring students closer to various new skills, traditional and cultural belief. A close bond is built between the students as they understand each other's different customs.
+We Celebrate every event of such kind with full enthusiasm. Students take part in them with full of excitement.</p>
+            </div>      
+        </div>
+    </div>
+</body>
+</html>

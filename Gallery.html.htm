@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    
+    
+<style>
+
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: #ecf0f3;
+  text-align: center;
+}
+.container{
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+.card{
+  height: 200px;
+  max-width: 350px;
+  margin: 0 20px;
+  background: white;
+  transition: 0.4s;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+.card:hover{
+  height: 280px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+.card .img{
+  height: 200px;
+  width: 100%;
+}
+.card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: solid 2px #ff8585;
+  box-shadow: -3px -3px 7px #ffffff,
+               3px 3px 5px #ceced1;
+
+}
+.card .top-text{
+  padding: 5px;
+}
+.card .top-text .name{
+  font-size: 25px;
+  font-weight: 600;
+  color: #202020;
+}
+.card .top-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #e74c3c;
+  line-height: 20px;
+}
+.card .bottom-text{
+  padding: 0 20px 10px 20px;
+  margin-top: 5px;
+  background: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
+}
+.card:hover .bottom-text{
+  opacity: 1;
+  visibility: visible;
+}
+.card .bottom-text .text{
+  text-align: justify;
+}
+.card .bottom-text .btn{
+  margin: 10px 0;
+  text-align: left;
+}
+.card .bottom-text .btn a{
+  text-decoration: none;
+  background: #e74c3c;
+  color: #f2f2f2;
+  padding: 5px 8px;
+  border-radius: 3px;
+  display: inline-flex;
+  transition: 0.2s;
+}
+.card .bottom-text .btn a:hover{
+  transform: scale(0.9);
+}
+@media screen and (max-width: 978px) {
+  .container{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .card{
+    max-width: 700px;
+    margin: 20px 0;
+  }
+}
+
+.card .text {
+font-weight: bold;
+color: #ff8585;
+}
+
+Button {
+  width: 300px;
+  padding: 15px 10px;
+  margin: 20px;
+  background: #ecf0f3;
+  color: #ff8585;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  outline: none;
+  rotate(90deg):left;
+  
+  letter-spacing: 2px;
+  box-shadow: -7px -7px 20px 0
+         rgba(255,255,255,5.7),
+          25px 25px 20px 0px
+          rgba(0,0,0,0.2);
+          
+}
+
+button:hover{
+  box-shadow: inset  -7px -7px 20px 0
+          rgba(255,255,255,0.7),
+        inset  7px 7px 20px 0px
+          rgba(0,0,0,0.2);
+          
+}
+
+</style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+  <marquee
+   loop= "5">
+    NOTE : Tap On Images For Their Details.</marquee>
+  <br>
+  <button>Our Gallery</button>
+    <div class="container">
+      <div class="card">
+        <div class="img">
+          <img src="galldronelook.jpg">
+        </div>
+        <div class="top-text">          
+</div>
+<div class="bottom-text">
+
+
+          <div class="text">
+ Drone View Of School.</div>  
+ </div>
+</div>
+</div>
+
+
+<div class="container">
+      <div class="card">
+        <div class="img">
+          <img src="gallassembly.jpg">
+        </div>
+        <div class="top-text">          
+</div>
+<div class="bottom-text">
+
+
+          <div class="text">
+ Morning Assembly Of Adarsh Vidya Mandir.</div>  
+ </div>
+</div>
+</div>
+
+<div class="container">
+      <div class="card">
+        <div class="img">
+          <img src="gallbaalsabha.jpg">
+        </div>
+        <div class="top-text">          
+</div>
+<div class="bottom-text">
+
+
+          <div class="text">
+ <em>"Baal Sabha" </em> Is Going On...</div>  
+ </div>
+</div>
+</div>
+
+<div class="container">
+      <div class="card">
+        <div class="img">
+          <img src="galldrawing.jpg">
+        </div>
+        <div class="top-text">          
+</div>
+<div class="bottom-text">
+
+
+          <div class="text">Students Drawing On Drawing   Competition.</div>  
+ </div>
+</div>
+</div>
+
+<div class="container">
+      <div class="card">
+        <div class="img">
+          <img src="gallproject.jpg">
+        </div>
+        <div class="top-text">          
+</div>
+<div class="bottom-text">
+
+
+          <div class="text">Students Made A Model Of Industries.</div>  
+ </div>
+</div>
+</div>
+
+<div class="container">
+      <div class="card">
+        <div class="img">
+          <img src="gallquiz-1.jpg">
+        </div>
+        <div class="top-text">          
+</div>
+<div class="bottom-text">
+
+
+          <div class="text">
+ Students On Science Quiz..</div>  
+ </div>
+</div>
+</div>
+
+<div class="container">
+      <div class="card">
+        <div class="img">
+          <img src="gallaward.jpg">
+        </div>
+        <div class="top-text">          
+</div>
+<div class="bottom-text">
+
+
+          <div class="text">Director Sir Receiving "Best Principal Award" By Raah Group Foundation.</div>
+ </div>
+</div>
+</div>
+
+<div class="container">
+      <div class="card">
+        <div class="img">
+          <img src="gallatgoldentem.jpg">
+        </div>
+        <div class="top-text">          
+</div>
+<div class="bottom-text">
+
+
+          <div class="text">Students And Teachers At Golden Temple.</div>  
+ </div>
+</div>
+</div>
+
+
+<div class="container">
+      <div class="card">
+        <div class="img">
+          <img src="hnr.jpg">
+        </div>
+        <div class="top-text">          
+</div>
+<div class="bottom-text">
+
+
+          <div class="text">Director Sir Honoring Mount Everester Rohtash Khileri</div>  
+ </div>
+</div>
+</div>
+
+<div class="container">
+      <div class="card">
+        <div class="img">
+          <img src="Rashmi1.jpg">
+        </div>
+        <div class="top-text">          
+</div>
+<div class="bottom-text">
+
+
+          <div class="text">Student With Her Drawing On Drawing Competition.  </div>  
+ </div>
+</div>
+</div>
+
+<div class="container">
+      <div class="card">
+        <div class="img">
+          <img src="galljaliyawala.jpg">
+        </div>
+        <div class="top-text">          
+</div>
+<div class="bottom-text">
+
+
+          <div class="text">
+ Students And Teachers At Jallianwala Bagh</div>  
+ </div>
+</div>
+</div>
+
+<div class="container">
+      <div class="card">
+        <div class="img">
+          <img src="harish.jpg">
+        </div>
+        <div class="top-text">          
+</div>
+<div class="bottom-text">
+
+
+          <div class="text">Student Performing At Annual Function .</div>  
+ </div>
+</div>
+</div>
+
+<div class="container">
+      <div class="card">
+        <div class="img">
+          <img src="prize.jpg">
+        </div>
+        <div class="top-text">          
+</div>
+<div class="bottom-text">
+
+
+          <div class="text">
+ Prize Distribution On Monthly Quiz. </div>  
+ </div>
+</div>
+</div>
+
+<div class="container">
+      <div class="card">
+        <div class="img">
+          <img src="mact.jpg">
+        </div>
+        <div class="top-text">          
+</div>
+<div class="bottom-text">
+
+
+          <div class="text">
+ Morning Speaking Activity Going On..</div>  
+ </div>
+</div>
+</div>
+
+<div class="container">
+      <div class="card">
+        <div class="img">
+          <img src="fancy.jpg">
+        </div>
+        <div class="top-text">          
+</div>
+<div class="bottom-text">
+
+
+          <div class="text">
+ Fancy Dress Competition Participants With Teachers</div>  
+ </div>
+</div>
+</div>
+</body>
+</html>
