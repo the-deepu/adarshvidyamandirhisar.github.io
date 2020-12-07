@@ -1,1 +1,1 @@
-# adarshvidyamandirhisar.github.io
+# Adarshvidyamandirhisar.github.io
